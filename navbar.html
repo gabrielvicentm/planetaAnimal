@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Primeira Navbar</title>
+
+  <!-- Google Fonts: importando a fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================
+       RESET BÁSICO
+       Remove margens e paddings padrão do navegador
+    ============================================ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    /* ============================================
+       NAVBAR
+       O elemento <nav> é o contêiner principal
+    ============================================ */
+    nav {
+      background-color: #1a1a2e;   /* cor de fundo escura */
+      padding: 0 40px;             /* espaçamento interno nas laterais */
+      display: flex;               /* coloca os filhos lado a lado */
+      justify-content: space-between; /* logo à esquerda, links à direita */
+      align-items: center;         /* alinha verticalmente ao centro */
+      height: 64px;                /* altura fixa da navbar */
+    }
+
+    /* ============================================
+       LOGO
+       É só um texto estilizado — poderia ser uma <img>
+    ============================================ */
+    .logo {
+      color: #e94560;              /* vermelho vibrante para destaque */
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;       /* remove sublinhado do link */
+    }
+
+    /* ============================================
+       LISTA DE LINKS
+       <ul> agrupa os itens de navegação
+    ============================================ */
+    .nav-links {
+      list-style: none;            /* remove os marcadores da lista */
+      display: flex;               /* coloca os <li> lado a lado */
+      gap: 8px;                    /* espaço entre cada item */
+    }
+
+    /* ============================================
+       LINKS INDIVIDUAIS
+       Cada <a> dentro do <li>
+    ============================================ */
+    .nav-links a {
+      color: #c0c8d8;              /* cor clara para o texto */
+      text-decoration: none;       /* sem sublinhado */
+      font-size: 15px;
+      padding: 8px 16px;           /* área clicável maior */
+      border-radius: 6px;          /* cantos arredondados */
+      transition: background 0.2s, color 0.2s; /* animação suave */
+    }
+
+    /* ============================================
+       EFEITO DE HOVER
+       Muda a aparência quando o mouse passa por cima
+    ============================================ */
+    .nav-links a:hover {
+      background-color: #e94560;   /* fundo vermelho */
+      color: #ffffff;              /* texto branco */
+    }
+
+    /* ============================================
+       LINK ATIVO
+       Indica em qual página o usuário está
+    ============================================ */
+    .nav-links a.ativo {
+      background-color: #e94560;
+      color: #ffffff;
+    }
+
+    /* ============================================
+       CONTEÚDO DA PÁGINA (só pra demonstração)
+    ============================================ */
+    .conteudo {
+      max-width: 700px;
+      margin: 80px auto;
+      text-align: center;
+      color: #1a1a2e;
+    }
+
+    .conteudo h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .conteudo p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =============================================
+       ESTRUTURA DA NAVBAR
+
+       <nav>         → elemento semântico de navegação
+         <a>         → logo (link para home)
+         <ul>        → lista de links
+           <li> <a>  → cada item de navegação
+  ============================================= -->
+  <nav>
+    <a href="#" class="logo">MeuSite</a>
+
+    <ul class="nav-links">
+      <li><a href="#" class="ativo">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo fictício só pra ver a página completa -->
+  <div class="conteudo">
+    <h1>Olá, mundo! 👋</h1>
+    <p>
+      Esta é uma navbar básica feita com HTML e CSS puro.<br />
+      Passe o mouse sobre os links e veja o efeito de hover!
+    </p>
+  </div>
+
+</body>
+</html>
