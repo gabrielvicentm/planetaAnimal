@@ -1,433 +1,306 @@
-# Planejamento de conteúdo — Site Planeta Animal
+# Conteúdo sugerido para o site Planeta Animal
 
-Este documento organiza o conteúdo e as funcionalidades que ainda precisam ser desenvolvidos no site institucional da Planeta Animal. Ele também serve como referência para dividir as tarefas entre os integrantes do grupo.
+## Página inicial
 
-## 1. Objetivo do projeto
+### Carrossel rotativo
 
-Desenvolver um site institucional responsivo para a Planeta Animal utilizando somente HTML5, CSS3 e JavaScript, sem frameworks e sem backend.
-
-O site deverá:
-
-- Apresentar a empresa e sua história;
-- Divulgar produtos e serviços;
-- Facilitar o contato e o agendamento;
-- Informar endereço e horários de atendimento;
-- Responder às dúvidas mais frequentes;
-- Funcionar em celulares, tablets e computadores;
-- Ter navegação simples, acessível e coerente em todas as páginas.
-
-## 2. Informações que precisam ser confirmadas
-
-Antes de publicar o site, será necessário confirmar alguns dados com o proprietário:
-
-- Número correto do WhatsApp;
-- Se o telefone `(19) 3673-3053` também recebe mensagens ou se é somente fixo;
-- Se a empresa realmente oferece atendimento de clínica veterinária;
-- Quais serviços veterinários são oferecidos, caso existam;
-- Quais espécies são atendidas;
-- O documento afirma que são atendidos somente cães e gatos, mas a logo também apresenta um peixe;
-- Lista completa dos serviços de banho e tosa;
-- Necessidade de agendamento prévio;
-- Regras para atraso ou cancelamento;
-- Necessidade de carteira de vacinação;
-- Formas de pagamento aceitas;
-- Existência de entrega de produtos ou transporte dos animais;
-- Existência de estacionamento;
-- Principais marcas comercializadas;
-- Orientação oficial para emergências fora do horário;
-- História da fundação da empresa;
-- Nome completo de todos os integrantes do grupo.
-
-Nenhuma informação não confirmada deve ser apresentada como verdadeira no site.
-
-## 3. Materiais que devem ser solicitados
-
-- Logo em PNG com fundo transparente, se estiver disponível;
-- Fotos da fachada;
-- Fotos do interior da loja;
-- Fotos da equipe;
-- Fotos do espaço de banho e tosa;
-- Fotos dos serviços sendo realizados, com autorização dos responsáveis pelos animais;
-- Fotos das principais categorias de produtos;
-- Relato do proprietário sobre a história da empresa;
-- Lista oficial de serviços;
-- Lista das marcas vendidas;
-- Link oficial da localização no Google Maps;
-- Número e link oficiais do WhatsApp;
-- Autorização para utilizar as imagens e informações fornecidas.
-
-## 4. Estrutura comum de todas as páginas
-
-Todas as páginas devem manter o mesmo cabeçalho, identidade visual e rodapé.
-
-### 4.1 Navbar
-
-A navbar deve conter:
-
-- Logo da Planeta Animal com link para a página inicial;
-- Início;
-- Sobre nós;
-- Serviços;
-- Produtos;
-- Dúvidas frequentes;
-- Contato;
-- Botão destacado “Agendar pelo WhatsApp”.
-
-Comportamentos necessários:
-
-- Indicar visualmente a página atual;
-- Permanecer legível em qualquer tamanho de tela;
-- Transformar-se em menu hambúrguer em telas menores;
-- Abrir e fechar pelo teclado;
-- Fechar ao pressionar `Esc`;
-- Utilizar atributos de acessibilidade como `aria-expanded` e `aria-current`;
-- Exibir foco visível para quem navega pelo teclado.
-
-### 4.2 Footer
-
-O rodapé deve conter:
-
-- Logo e nome da empresa;
-- Frase institucional;
-- Links rápidos;
-- Telefone;
-- WhatsApp;
-- Instagram;
-- Horários de atendimento;
-- Endereço completo;
-- Link “Como chegar”;
-- Direitos autorais;
-- Nomes dos integrantes responsáveis pelo desenvolvimento.
-
-Conteúdo provisório:
-
-- Segunda a sexta-feira: 08h às 17h30;
-- Sábado: 08h às 12h;
-- Telefone: `(19) 3673-3053`;
-- Instagram: `@planetaanimaltambau`;
-- Endereço: Rua Cel. José Bitencourt, 98, Centro, Tambaú-SP.
-
-Essas informações deverão ser verificadas antes da publicação.
-
-## 5. Página inicial
-
-A página inicial deve apresentar um resumo das informações mais importantes e encaminhar o visitante para as páginas internas.
-
-### 5.1 Carrossel rotativo de destaques
-
-O “menu rotativo” será implementado como um carrossel de banners na área principal da página inicial.
-
-Sugestão de slides:
+O topo da página terá um carrossel com quatro destaques:
 
 1. **Apresentação da empresa**
-   - Título: “Tudo para o bem-estar do seu melhor amigo”;
-   - Texto curto sobre a Planeta Animal;
+   - Título sugerido: “Tudo para o bem-estar do seu melhor amigo”;
+   - Breve apresentação da Planeta Animal;
+   - Destaque para os 21 anos de atuação;
    - Botão “Conheça a Planeta Animal”;
-   - Imagem da fachada, equipe ou de um animal.
+   - Foto da fachada, equipe ou de um animal.
 
 2. **Banho e tosa**
-   - Título relacionado aos cuidados com o animal;
-   - Descrição curta do serviço;
+   - Frase sobre cuidado, higiene e bem-estar;
+   - Resumo do serviço;
    - Botão “Conheça nossos serviços”;
-   - Foto real do espaço ou do atendimento.
+   - Foto do espaço ou de um atendimento.
 
 3. **Produtos**
-   - Destaque para rações, petiscos, acessórios, brinquedos e higiene;
-   - Botão “Ver produtos”;
+   - Destaque para rações, petiscos, acessórios, brinquedos, medicamentos e higiene;
+   - Botão “Conheça nossos produtos”;
    - Foto das prateleiras ou dos produtos.
 
 4. **Contato e agendamento**
-   - Chamada para entrar em contato;
-   - Horário resumido;
+   - Convite para entrar em contato;
+   - Horário de atendimento resumido;
    - Botão “Falar pelo WhatsApp”;
-   - Imagem adequada à comunicação.
+   - Foto relacionada ao atendimento.
 
-Requisitos do carrossel:
+### Categorias principais
 
-- Ser feito somente com HTML, CSS e JavaScript;
-- Trocar automaticamente de slide;
-- Ter botões de próximo e anterior;
-- Ter indicadores que permitam selecionar um slide;
-- Pausar a rotação quando o mouse estiver sobre o carrossel;
-- Pausar quando um controle interno receber foco pelo teclado;
-- Permitir navegação pelo teclado;
-- Informar corretamente o slide atual para tecnologias assistivas;
-- Respeitar a configuração `prefers-reduced-motion` do dispositivo;
-- Não utilizar textos dentro das imagens;
-- Manter título, texto e botão como elementos HTML;
-- Utilizar imagens otimizadas para não prejudicar o carregamento;
-- Evitar mudanças de altura entre os slides;
-- Funcionar corretamente em celulares;
-- Ter contraste suficiente entre o texto e a imagem;
-- Oferecer alternativa caso o JavaScript esteja desativado, deixando ao menos o primeiro slide visível.
-
-Tempo inicial sugerido para a rotação automática: entre cinco e sete segundos. Esse valor poderá ser ajustado após os testes.
-
-### 5.2 Categorias principais
-
-Criar cards para:
+Cards com imagem, título, descrição curta e link:
 
 - Banho e tosa;
 - Rações e petiscos;
 - Acessórios;
 - Brinquedos;
-- Medicamentos e higiene.
+- Medicamentos e produtos de higiene.
 
-Cada card poderá conter:
-
-- Imagem;
-- Título;
-- Descrição curta;
-- Link para Serviços ou Produtos.
-
-### 5.3 Tradição da empresa
-
-Criar uma seção destacando:
+### Tradição da empresa
 
 - 21 anos de atuação;
 - Experiência no mercado local;
-- Atendimento próximo;
-- Confiança construída com a comunidade de Tambaú.
+- Confiança construída com os moradores de Tambaú;
+- Atendimento próximo e personalizado;
+- Título sugerido: “Há mais de duas décadas cuidando dos animais de Tambaú”.
 
-Possível título: “Há mais de duas décadas cuidando dos animais de Tambaú”.
+### Serviços em destaque
 
-### 5.4 Serviços em destaque
+- Resumo dos principais serviços confirmados;
+- Animais atendidos;
+- Imagens dos serviços;
+- Botão “Ver todos os serviços”.
 
-Apresentar um resumo dos principais serviços confirmados e incluir um botão para a página Serviços.
+### Produtos em destaque
 
-### 5.5 Chamada para contato
+- Rações e petiscos;
+- Coleiras, guias e roupas;
+- Brinquedos;
+- Medicamentos e produtos de higiene;
+- Botão “Ver produtos”.
 
-Incluir:
+### Chamada para contato
 
-- Texto convidando o visitante a entrar em contato;
+- Convite para conversar com a equipe;
 - Telefone;
+- WhatsApp;
 - Horário de atendimento;
-- Botão de WhatsApp;
-- Aviso de que o horário depende da confirmação da equipe.
+- Botão “Agendar pelo WhatsApp”;
+- Aviso de que a mensagem não confirma automaticamente o agendamento.
 
-### 5.6 Localização resumida
+### Localização resumida
 
-Apresentar:
-
-- Endereço;
+- Rua Cel. José Bitencourt, 98;
+- Centro, Tambaú-SP;
 - Mapa ou prévia da localização;
 - Botão “Como chegar”.
 
-## 6. Página Sobre nós
+## Página Sobre nós
 
-### 6.1 Apresentação
-
-Explicar:
+### Apresentação
 
 - O que é a Planeta Animal;
 - Onde está localizada;
 - Há quanto tempo atua;
-- Quais produtos e serviços oferece;
-- Qual público atende.
+- Produtos e serviços oferecidos;
+- Animais atendidos;
+- Perfil dos clientes.
 
-### 6.2 História
-
-O texto deverá responder:
+### História
 
 - Como a empresa começou;
 - Quem a fundou;
 - Por que foi criada;
 - Como evoluiu durante seus 21 anos;
-- Como construiu sua relação com Tambaú;
-- Quais foram os momentos importantes da empresa.
+- Relação construída com a comunidade de Tambaú;
+- Principais acontecimentos de sua trajetória.
 
-Essas informações precisam ser obtidas em uma conversa com o proprietário.
+### Missão
 
-### 6.3 Missão, visão e valores
+Sugestão: “Oferecer produtos e cuidados de qualidade que contribuam para a saúde, a felicidade e o bem-estar dos animais.”
 
-Sugestão inicial, sujeita à aprovação:
+### Visão
 
-- **Missão:** oferecer produtos e cuidados que contribuam para a saúde e o bem-estar dos animais;
-- **Visão:** continuar sendo uma referência de confiança no segmento pet em Tambaú;
-- **Valores:** respeito aos animais, confiança, qualidade, responsabilidade e bom atendimento.
+Sugestão: “Continuar sendo uma referência de confiança no segmento pet em Tambaú e região.”
 
-### 6.4 Diferenciais
+### Valores
 
-Possíveis destaques:
+- Respeito aos animais;
+- Confiança;
+- Qualidade;
+- Responsabilidade;
+- Bom atendimento;
+- Proximidade com os clientes.
+
+### Diferenciais
 
 - 21 anos de experiência;
 - Atendimento próximo e personalizado;
 - Produtos selecionados;
-- Cuidados para cães e gatos;
 - Conhecimento do mercado local;
+- Confiança construída com os clientes;
 - Facilidade de contato e agendamento.
 
-### 6.5 Galeria
+### Galeria
 
-Utilizar fotos reais da fachada, interior, equipe, produtos e serviços. As imagens devem possuir texto alternativo adequado.
+- Fachada;
+- Interior da loja;
+- Equipe;
+- Espaço de banho e tosa;
+- Produtos;
+- Animais atendidos.
 
-## 7. Página Serviços
+## Página Serviços
 
-### 7.1 Introdução
+### Apresentação
 
-Explicar os cuidados oferecidos, os animais atendidos, a importância da higiene e a forma de agendamento.
+- Cuidados oferecidos;
+- Animais atendidos;
+- Importância da higiene e do bem-estar;
+- Forma de agendamento.
 
-### 7.2 Cards dos serviços
+### Banho
 
-Criar um card para cada serviço confirmado. Possibilidades que ainda precisam ser verificadas:
+- Descrição;
+- Animais atendidos;
+- Produtos utilizados;
+- Etapas incluídas;
+- Forma de agendamento;
+- Foto do serviço.
 
-- Banho;
+### Tosa
+
+Apresentar somente as modalidades realmente oferecidas:
+
 - Tosa completa;
 - Tosa higiênica;
-- Tosa específica por raça;
+- Tosa específica por raça.
+
+Para cada uma, incluir descrição, animais atendidos, cuidados realizados, agendamento e foto.
+
+### Outros cuidados
+
+Apresentar somente os serviços confirmados:
+
 - Corte de unhas;
 - Limpeza de ouvidos;
 - Escovação;
+- Outros cuidados de higiene;
 - Serviços veterinários, caso realmente existam.
 
-Cada card deverá conter:
+### Como funciona
 
-- Nome;
-- Descrição;
-- Animais atendidos;
-- Imagem;
-- Orientação para agendamento.
-
-### 7.3 Como funciona
-
-Possível passo a passo:
-
-1. Cliente entra em contato;
+1. O cliente entra em contato;
 2. Informa os dados do animal e o serviço desejado;
 3. Escolhe uma data disponível;
-4. Aguarda a confirmação da equipe;
+4. Aguarda a confirmação;
 5. Leva o animal no horário combinado;
-6. Retira o animal após a conclusão.
+6. Retira o animal depois da conclusão.
 
-O processo precisa ser confirmado com o proprietário.
-
-### 7.4 Informações importantes
-
-Verificar e informar:
+### Informações importantes
 
 - Necessidade de agendamento;
 - Regras para atrasos e cancelamentos;
-- Necessidade de carteira de vacinação;
+- Exigência de carteira de vacinação;
 - Restrições de atendimento;
 - Cuidados antes do serviço;
 - Formas de pagamento.
 
-### 7.5 Chamada para agendamento
+### Agendamento
 
-Adicionar telefone, WhatsApp, horários e aviso de que o envio de uma mensagem não confirma automaticamente o agendamento.
+- WhatsApp;
+- Telefone;
+- Horários;
+- Botão “Agendar pelo WhatsApp”;
+- Aviso de que o horário depende da confirmação da equipe.
 
-## 8. Página Produtos
+## Página Produtos
 
-O site será apenas institucional. Não haverá carrinho, pagamento, login ou compra online.
+### Apresentação
 
-### 8.1 Introdução
+- Explicação sobre os produtos oferecidos;
+- Informação de que o site não realiza vendas;
+- Preços consultados diretamente com a empresa;
+- Disponibilidade sujeita ao estoque;
+- Consulta por WhatsApp ou presencialmente.
 
-Explicar que a empresa possui produtos selecionados e que preços e disponibilidade devem ser consultados diretamente.
-
-### 8.2 Categorias
-
-#### Rações e petiscos
+### Rações e petiscos
 
 - Rações para cães;
 - Rações para gatos;
 - Opções para diferentes idades e portes;
 - Petiscos;
-- Rações terapêuticas, somente se forem comercializadas.
+- Rações terapêuticas, caso sejam vendidas.
 
-#### Acessórios
+### Acessórios
 
 - Coleiras;
 - Guias;
 - Roupas;
 - Comedouros;
 - Bebedouros;
-- Camas e caixas de transporte, caso disponíveis.
+- Camas;
+- Caixas de transporte.
 
-#### Brinquedos
+### Brinquedos
 
 - Brinquedos para cães;
 - Brinquedos para gatos;
-- Itens de entretenimento e enriquecimento.
+- Produtos para entretenimento;
+- Produtos para enriquecimento e estímulo.
 
-#### Medicamentos e higiene
+### Medicamentos e higiene
 
 - Shampoos;
 - Produtos de higiene;
 - Antipulgas;
-- Medicamentos.
+- Medicamentos;
+- Outros produtos de cuidado;
+- Orientação para buscar um veterinário quando necessário.
 
-O site não deve prescrever medicamentos. Quando necessário, deverá orientar o visitante a procurar um profissional veterinário.
+### Marcas
 
-### 8.3 Cards de produtos
+- Principais marcas comercializadas, após confirmação do proprietário.
 
-Cada card poderá conter:
+### Consulta
 
-- Imagem;
-- Nome da categoria;
-- Descrição;
-- Botão “Consultar disponibilidade”.
+- Botão “Consultar disponibilidade” em cada categoria;
+- Direcionamento para o WhatsApp ou para a página de contato.
 
-Não é recomendado publicar preços, pois eles mudam e exigiriam manutenção constante.
+## Página Dúvidas frequentes
 
-### 8.4 Marcas
+### Perguntas e respostas
 
-Após autorização, poderá ser criada uma área com as principais marcas comercializadas.
+- **Qual é o endereço?** Rua Cel. José Bitencourt, 98, Centro, Tambaú-SP.
+- **Qual é o horário?** Segunda a sexta, das 08h às 17h30, e sábado, das 08h às 12h. Domingo e feriados devem ser confirmados.
+- **Quais animais são atendidos?** Informar após confirmação do proprietário.
+- **Como agendar?** Explicar o contato por WhatsApp, telefone ou presencialmente e a necessidade de confirmação.
+- **É necessário agendar banho e tosa?** Informar a regra da empresa.
+- **É necessária carteira de vacinação?** Informar a exigência da empresa.
+- **Quais formas de pagamento são aceitas?** Listar as opções confirmadas.
+- **A empresa busca ou entrega o animal?** Informar se o serviço existe e suas condições.
+- **Existe estacionamento?** Informar se há estacionamento próprio ou opções próximas.
+- **É possível reservar produtos?** Explicar como funciona a reserva.
+- **É possível consultar preços pelo WhatsApp?** Explicar como realizar a consulta.
+- **Existe atendimento veterinário?** Informar somente os serviços realmente oferecidos.
+- **A empresa vende medicamentos?** Informar as categorias e orientar o uso responsável.
+- **O que fazer em uma emergência fora do horário?** Informar se existe plantão. Caso não exista, orientar a procura de uma clínica veterinária de emergência.
 
-## 9. Página Dúvidas frequentes
+## Página Contato
 
-O FAQ poderá ser apresentado como um acordeão controlado por JavaScript.
+### Apresentação
 
-Perguntas previstas:
+- Convite para tirar dúvidas, consultar produtos ou solicitar um agendamento.
 
-1. Qual é o endereço da loja?
-2. Quais espécies de animais são atendidas?
-3. Qual é o horário de funcionamento?
-4. Como agendar um serviço?
-5. O que fazer em caso de emergência fora do horário?
-6. É necessário agendar banho e tosa?
-7. Quais formas de pagamento são aceitas?
-8. Existe estacionamento?
-9. A empresa busca ou entrega o animal?
-10. É necessário apresentar carteira de vacinação?
-11. É possível reservar produtos pelo WhatsApp?
-12. A Planeta Animal oferece atendimento veterinário?
-13. A empresa vende medicamentos?
-14. É possível consultar preços pelo WhatsApp?
+### Canais de atendimento
 
-Requisitos do acordeão:
+- Telefone: `(19) 3673-3053`;
+- Número correto do WhatsApp;
+- Instagram: `@planetaanimaltambau`;
+- Botão “Ligar agora”;
+- Botão “Abrir WhatsApp”;
+- Botão “Acessar Instagram”.
 
-- Abrir e fechar com clique ou teclado;
-- Utilizar botões HTML reais;
-- Atualizar `aria-expanded`;
-- Mostrar claramente qual pergunta está aberta;
-- Funcionar sem animações excessivas;
-- Manter as respostas disponíveis no HTML para acessibilidade e mecanismos de busca.
+### Horários
 
-A resposta sobre emergências deve ser escrita com cuidado. Se não houver plantão, o site deverá informar isso claramente e orientar a busca por atendimento veterinário de emergência.
+- Segunda a sexta-feira: 08h às 17h30;
+- Sábado: 08h às 12h;
+- Domingo e feriados: informação a confirmar.
 
-## 10. Página Contato
+### Endereço
 
-### 10.1 Informações
+- Rua Cel. José Bitencourt, 98;
+- Centro, Tambaú-SP;
+- Mapa;
+- Botão “Como chegar”.
 
-- Telefone;
-- WhatsApp;
-- Instagram;
-- Endereço completo;
-- Horários;
-- Mapa.
+### Formulário
 
-### 10.2 Botões diretos
-
-- Ligar agora;
-- Abrir WhatsApp;
-- Abrir Instagram;
-- Ver rota no Google Maps.
-
-### 10.3 Formulário sem backend
-
-Como o projeto não terá backend, o formulário poderá montar uma mensagem e abrir o WhatsApp.
-
-Campos sugeridos:
+Campos:
 
 - Nome do cliente;
 - Telefone;
@@ -436,170 +309,67 @@ Campos sugeridos:
 - Assunto;
 - Mensagem.
 
-O JavaScript deverá:
+Ao enviar, o formulário deverá abrir o WhatsApp com a mensagem preenchida.
 
-- Validar os campos obrigatórios;
-- Exibir mensagens de erro claras;
-- Montar uma mensagem organizada;
-- Codificar o texto corretamente na URL;
-- Abrir o WhatsApp em uma nova aba;
-- Não armazenar os dados preenchidos.
+Aviso: “O envio da mensagem não confirma o agendamento. Aguarde a confirmação da equipe.”
 
-Adicionar o aviso: “O envio da mensagem não confirma o agendamento. Aguarde a confirmação da equipe.”
+## Conteúdo comum: navbar
 
-### 10.4 Mapa
+- Logo;
+- Início;
+- Sobre nós;
+- Serviços;
+- Produtos;
+- Dúvidas frequentes;
+- Contato;
+- Botão “Agendar pelo WhatsApp”.
 
-Incorporar o Google Maps ou apresentar uma imagem leve da localização com um link externo. O mapa deve possuir título acessível.
+## Conteúdo comum: footer
 
-## 11. Identidade visual e imagens
+- Logo e nome Planeta Animal;
+- Frase “Há 21 anos cuidando de quem faz parte da sua família”;
+- Links para todas as páginas;
+- Horários;
+- Telefone;
+- WhatsApp;
+- Instagram;
+- Endereço;
+- Link “Como chegar”;
+- Direitos autorais;
+- Ano atual;
+- Nomes dos integrantes do grupo.
 
-A paleta inicial é baseada na logo:
+## Materiais necessários
 
-- Vermelho como cor principal;
-- Amarelo para destaques;
-- Azul em detalhes;
-- Preto para textos e rodapé;
-- Fundos claros para manter a leitura confortável.
-
-Cuidados necessários:
-
-- Não utilizar todas as cores fortes em grandes áreas ao mesmo tempo;
-- Garantir contraste de texto;
-- Manter os mesmos estilos de botão e card;
-- Otimizar imagens antes de colocá-las no site;
-- Utilizar formatos como WebP quando possível;
-- Informar largura e altura das imagens para evitar mudanças no layout;
-- Criar textos alternativos úteis;
-- Evitar imagens genéricas quando houver fotos reais da empresa.
-
-## 12. Requisitos gerais de qualidade
-
-- HTML semântico;
-- Um único `h1` por página;
-- Hierarquia correta de títulos;
-- CSS compartilhado;
-- JavaScript compartilhado quando possível;
-- Navegação por teclado;
-- Foco visível;
-- Contraste adequado;
-- Layout responsivo;
-- Imagens otimizadas;
-- Links externos abrindo de forma segura;
-- Metadados de título e descrição específicos por página;
-- Revisão ortográfica;
-- Testes em celulares, tablets e computadores;
-- Teste de todos os links;
-- Nenhuma informação inventada;
-- Nenhuma dependência de backend.
-
-## 13. Sugestão de divisão do trabalho
-
-A divisão abaixo pode ser ajustada de acordo com a quantidade de integrantes e a experiência de cada pessoa.
-
-### Frente 1 — Página inicial e carrossel
-
-Responsabilidades:
-
-- Criar o conteúdo da página inicial;
-- Implementar o carrossel;
-- Criar controles, indicadores e rotação automática;
-- Garantir responsividade e acessibilidade;
-- Desenvolver seções de categorias, tradição, contato e localização.
-
-Dependências:
-
-- Fotos da empresa;
-- Textos aprovados;
-- Número do WhatsApp.
-
-### Frente 2 — Sobre nós e conteúdo institucional
-
-Responsabilidades:
-
-- Entrevistar o proprietário;
-- Escrever e revisar a história;
-- Definir missão, visão e valores;
-- Montar diferenciais;
-- Organizar a galeria de fotos;
-- Confirmar todas as informações institucionais.
-
-### Frente 3 — Serviços e Produtos
-
-Responsabilidades:
-
-- Confirmar a lista completa de serviços;
-- Produzir cards e descrições;
-- Organizar o passo a passo do atendimento;
-- Criar as categorias de produtos;
-- Levantar marcas e fotografias;
-- Adicionar chamadas para contato.
-
-### Frente 4 — FAQ, Contato e integração com WhatsApp
-
-Responsabilidades:
-
-- Confirmar e escrever as respostas do FAQ;
-- Implementar o acordeão acessível;
-- Criar a página de contato;
-- Criar a validação do formulário;
-- Montar a mensagem automática para WhatsApp;
-- Adicionar mapa e links externos.
-
-### Frente 5 — Revisão e integração
-
-Esta responsabilidade pode ser compartilhada pelo grupo:
-
-- Padronizar navbar e footer;
-- Verificar se os códigos de diferentes integrantes seguem o mesmo estilo;
-- Resolver conflitos entre arquivos;
-- Revisar textos;
-- Testar responsividade;
-- Testar acessibilidade;
-- Testar links;
-- Comprimir imagens;
-- Fazer a revisão final antes da apresentação.
-
-## 14. Regras para o trabalho em grupo
-
-- Cada pessoa deverá trabalhar apenas nos arquivos combinados;
-- Alterações no CSS compartilhado deverão ser comunicadas ao grupo;
-- Classes CSS devem ter nomes claros e específicos;
-- Evitar estilos dentro dos arquivos HTML;
-- Evitar JavaScript dentro dos arquivos HTML;
-- Não duplicar funções já existentes no `main.js`;
-- Antes de integrar uma página, atualizar a versão local do projeto;
-- Testar a página antes de entregá-la;
-- Não modificar navbar ou footer isoladamente em apenas uma página;
-- Registrar informações ainda não confirmadas como pendências, e não como fatos;
-- Manter a mesma estrutura de pastas definida no projeto.
-
-## 15. Ordem recomendada
-
-1. Confirmar os dados pendentes com o proprietário;
-2. Reunir e organizar fotos e materiais;
-3. Desenvolver a página inicial e o carrossel;
-4. Desenvolver Sobre nós;
-5. Desenvolver Serviços;
-6. Desenvolver Produtos;
-7. Desenvolver Dúvidas frequentes;
-8. Desenvolver Contato e WhatsApp;
-9. Revisar navbar e footer em todas as páginas;
-10. Otimizar imagens;
-11. Testar responsividade e acessibilidade;
-12. Revisar textos e informações;
-13. Publicar e realizar o teste final.
-
-## 16. Critérios para considerar uma página pronta
-
-Uma página somente deverá ser marcada como concluída quando:
-
-- Seu conteúdo estiver completo e aprovado;
-- Não houver informações não confirmadas;
-- Funcionar em celular e computador;
-- Todos os links funcionarem;
-- As imagens estiverem otimizadas;
-- Possuir título e descrição próprios;
-- Funcionar por teclado;
-- Não apresentar erros no console do navegador;
-- Manter o mesmo padrão visual das outras páginas;
-- Tiver sido revisada por pelo menos outro integrante do grupo.
+- Número correto do WhatsApp;
+- Confirmação de que o telefone informado é fixo ou também recebe mensagens;
+- Horários de domingo e feriados;
+- Link oficial do Google Maps;
+- Espécies atendidas;
+- Confirmação sobre atendimento veterinário;
+- Lista e descrição dos serviços;
+- Processo real de agendamento;
+- Regras para atrasos e cancelamentos;
+- Exigência de carteira de vacinação;
+- Formas de pagamento;
+- Informação sobre entrega de produtos;
+- Informação sobre transporte dos animais;
+- Informação sobre estacionamento;
+- Orientação para emergências;
+- Categorias de produtos disponíveis;
+- Principais marcas vendidas;
+- História da fundação da empresa;
+- Nome dos fundadores;
+- Principais acontecimentos dos 21 anos;
+- Aprovação da missão, visão e valores;
+- Aprovação da frase institucional;
+- Logo em PNG com fundo transparente;
+- Foto da fachada;
+- Fotos do interior;
+- Fotos da equipe;
+- Fotos do banho e tosa;
+- Fotos dos serviços;
+- Fotos dos produtos;
+- Fotos de animais atendidos com autorização;
+- Autorização para utilizar todas as imagens;
+- Nomes completos dos integrantes do grupo.
