@@ -33,3 +33,20 @@ document.querySelectorAll('[data-current-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
 
+
+
+// Códigos do slider/carrossel
+const primeiroRadio = document.getElementById('radio1');
+let slideAtual = 1;
+
+if (primeiroRadio) {
+  setInterval(() => {
+    slideAtual++;
+
+    if (slideAtual > 3) {
+      slideAtual = 1;
+    }
+
+    document.getElementById('radio' + slideAtual).checked = true;
+  }, 5000);
+}
