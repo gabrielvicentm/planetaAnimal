@@ -1,7 +1,7 @@
 Início - Gabriel H.
-Sobre nós - 
-Serviços -
-Produtos -
+Sobre nós - Gabriel H.
+Serviços - Leandro
+Produtos - Leandro
 Dúvidas Frequentes - Richard
 Contato - Richard               
 
