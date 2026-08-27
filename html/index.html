@@ -45,50 +45,125 @@
             <input type="radio" name="btn-radio" id="radio1" checked>
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
 
             <div class="slide-box primeiro">
                 <img class="img-desktop" src="../assets/images/slide-1.jpg" alt="slide 1">
                 <img class="img-mobile" src="../assets/images/slide-1.jpg" alt="slide 1">
+                <div class="slide-texto">
+                  <h1>Tudo para o bem-estar do seu melhor amigo</h1>
+                  <p>Há 21 anos, a Planeta Animal cuida dos animais de Tambaú com atenção e carinho.</p>
+                  <a href="sobre.html">Conheça a Planeta Animal</a>
+                </div>
             </div>
 
             <div class="slide-box">
                 <img class="img-desktop" src="../assets/images/slide-2.jpg" alt="Cachorro da raça husky siberiano">
                 <img class="img-mobile" src="../assets/images/slide-2.jpg" alt="Cachorro da raça husky siberiano">
+                <div class="slide-texto">
+                  <h2>Banho e tosa com cuidado</h2>
+                  <p>Cuidados de higiene e bem-estar para deixar seu animal limpo e confortável.</p>
+                  <a href="servicos.html">Conheça nossos serviços</a>
+                </div>
             </div>
 
             <div class="slide-box">
                 <img class="img-desktop" src="../assets/images/slide-3.jpg" alt="Terceiro destaque do Planeta Animal">
                 <img class="img-mobile" src="../assets/images/slide-3.jpg" alt="Terceiro destaque do Planeta Animal">
+                <div class="slide-texto">
+                  <h2>Produtos para todas as fases</h2>
+                  <p>Rações, petiscos, acessórios, brinquedos e itens de higiene.</p>
+                  <a href="produtos.html">Conheça nossos produtos</a>
+                </div>
             </div>
 
-            <div class="nav-auto">
+            <div class="slide-box">
+                <img class="img-desktop" src="../assets/images/slide-1.jpg" alt="Atendimento da Planeta Animal">
+                <img class="img-mobile" src="../assets/images/slide-1.jpg" alt="Atendimento da Planeta Animal">
+                <div class="slide-texto">
+                  <h2>Entre em contato com nossa equipe</h2>
+                  <p>Atendimento de segunda a sexta, das 08h às 17h30, e sábado, das 08h às 12h.</p>
+                  <a href="contato.html">Falar pelo WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="nav-auto" aria-hidden="true">
                 <div class="auto-btn1"></div>
                 <div class="auto-btn2"></div>
                 <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
 
             <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+                <label for="radio1" class="manual-btn" aria-label="Mostrar destaque 1"></label>
+                <label for="radio2" class="manual-btn" aria-label="Mostrar destaque 2"></label>
+                <label for="radio3" class="manual-btn" aria-label="Mostrar destaque 3"></label>
+                <label for="radio4" class="manual-btn" aria-label="Mostrar destaque 4"></label>
             </div>
 
         </div>
     </section>
 
+    <section class="home-section" aria-labelledby="categorias-title">
+      <h2 id="categorias-title">Encontre o que seu animal precisa</h2>
+      <p>Conheça algumas das principais categorias da Planeta Animal.</p>
+      <div class="card-grid categories-grid">
+        <article class="home-card"><h3>Banho e tosa</h3><p>Cuidados de higiene, limpeza e bem-estar.</p><a href="servicos.html">Ver serviços</a></article>
+        <article class="home-card"><h3>Rações e petiscos</h3><p>Opções para diferentes idades e necessidades.</p><a href="produtos.html">Ver produtos</a></article>
+        <article class="home-card"><h3>Acessórios</h3><p>Itens úteis para o passeio e para o dia a dia.</p><a href="produtos.html">Ver produtos</a></article>
+        <article class="home-card"><h3>Brinquedos</h3><p>Diversão e estímulo para seu companheiro.</p><a href="produtos.html">Ver produtos</a></article>
+        <article class="home-card"><h3>Higiene e cuidados</h3><p>Produtos para ajudar nos cuidados diários.</p><a href="produtos.html">Ver produtos</a></article>
+      </div>
+    </section>
 
+    <section class="home-section tradition-section" aria-labelledby="tradicao-title">
+      <div>
+        <p class="section-label">Nossa história</p>
+        <h2 id="tradicao-title">Há mais de duas décadas cuidando dos animais de Tambaú</h2>
+        <p>São 21 anos de experiência no mercado local, com atendimento próximo e personalizado. Ao longo desse tempo, a Planeta Animal construiu uma relação de confiança com seus clientes.</p>
+        <a class="home-button" href="sobre.html">Conheça nossa história</a>
+      </div>
+      <img src="../assets/images/slide-1.jpg" alt="Animal atendido pela Planeta Animal">
+    </section>
 
+    <section class="home-section" aria-labelledby="servicos-title">
+      <h2 id="servicos-title">Serviços em destaque</h2>
+      <p>Cuidados voltados à higiene e ao bem-estar dos animais.</p>
+      <div class="card-grid two-columns">
+        <article class="home-card"><h3>Banho</h3><p>Limpeza e cuidado para manter seu animal confortável.</p></article>
+        <article class="home-card"><h3>Tosa</h3><p>Serviço realizado conforme as necessidades do animal e as modalidades disponíveis.</p></article>
+      </div>
+      <a class="home-button" href="servicos.html">Ver todos os serviços</a>
+    </section>
 
+    <section class="home-section products-section" aria-labelledby="produtos-title">
+      <h2 id="produtos-title">Produtos em destaque</h2>
+      <div class="card-grid products-grid">
+        <article class="home-card"><h3>Rações e petiscos</h3><p>Alimentação para diferentes fases da vida.</p></article>
+        <article class="home-card"><h3>Coleiras, guias e roupas</h3><p>Acessórios para passeio, proteção e conforto.</p></article>
+        <article class="home-card"><h3>Brinquedos</h3><p>Opções para diversão e estímulo.</p></article>
+        <article class="home-card"><h3>Medicamentos e higiene</h3><p>Itens de cuidado sujeitos à disponibilidade.</p></article>
+      </div>
+      <a class="home-button" href="produtos.html">Ver produtos</a>
+    </section>
 
+    <section class="home-section contact-call" aria-labelledby="contato-title">
+      <h2 id="contato-title">Fale com a Planeta Animal</h2>
+      <p>Entre em contato para tirar dúvidas, consultar produtos ou solicitar um agendamento.</p>
+      <p><strong>Telefone:</strong> <a href="tel:+551936733053">(19) 3673-3053</a></p>
+      <p><strong>Horário:</strong> segunda a sexta, das 08h às 17h30; sábado, das 08h às 12h.</p>
+      <a class="home-button" href="contato.html">Agendar pelo WhatsApp</a>
+      <small>O envio da mensagem não confirma o agendamento. Aguarde a confirmação da equipe.</small>
+    </section>
 
-
-
-
-
-
-
-
-
+    <section class="home-section location-section" aria-labelledby="localizacao-title">
+      <div>
+        <h2 id="localizacao-title">Onde estamos</h2>
+        <address>Rua Cel. José Bitencourt, 98<br>Centro — Tambaú/SP</address>
+        <a class="home-button" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Cel.+Jose+Bitencourt+98+Tambau+SP" target="_blank" rel="noopener noreferrer">Como chegar</a>
+      </div>
+      <iframe class="map-preview" src="https://www.google.com/maps?q=Rua+Cel.+Jose+Bitencourt+98+Tambau+SP&amp;output=embed" title="Mapa da localização da Planeta Animal" loading="lazy"></iframe>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -103,7 +178,7 @@
       </nav>
       <section class="footer-section">
         <h2>Atendimento</h2>
-        <p>Segunda a sexta: 08h às 17h30</p><p>Sábado: 08h às 12h</p><p><a href="tel:+551936733053">(19) 3673-3053</a></p><p><a href="https://www.instagram.com/planetaanimaltambau" target="_blank" rel="noopener noreferrer">@planetaanimaltambau</a></p>
+        <p>Segunda a sexta: 08h às 17h30</p><p>Sábado: 08h às 12h</p><p><a href="tel:+551936733053">(19) 3673-3053</a></p><p><a href="contato.html">WhatsApp</a></p><p><a href="https://www.instagram.com/planetaanimaltambau" target="_blank" rel="noopener noreferrer">@planetaanimaltambau</a></p>
       </section>
       <section class="footer-section">
         <h2>Localização</h2>
