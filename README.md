@@ -1,3 +1,1 @@
 # planetaAnimal
-
--avaliações reais

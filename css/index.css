@@ -237,7 +237,34 @@ section.slider{
     border: 1px solid #aaa;
 }
 
+/* Avaliacoes ilustrativas da pagina inicial. */
+.reviews-section .reviews-notice { color: #65594c; font-size: 14px; }
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+.review-card {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    border: 1px solid #e7ddd0;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(80, 40, 20, .06);
+    text-align: left;
+}
+.review-person { display: flex; align-items: center; gap: 14px; }
+.review-person img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.review-person h3 { margin: 0 0 4px; font-size: 19px; }
+.review-person span { color: #65594c; font-size: 13px; }
+.review-card .review-stars { margin: 20px 0 14px; color: #9a6700; font-size: 24px; }
+.review-card blockquote { margin: 0 0 24px; font-size: 17px; line-height: 1.7; }
+.review-card .review-topic { margin: auto 0 0; color: #65594c; font-size: 13px; }
+
 @media screen and (max-width: 900px) {
+    .reviews-grid { grid-template-columns: 1fr; }
     .img-desktop{
         display: none;
     }
