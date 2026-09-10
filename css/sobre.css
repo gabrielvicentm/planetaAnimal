@@ -1,0 +1,194 @@
+/* Estilos exclusivos da pagina Sobre nos. */
+.sobre-page {
+  flex: 1;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+  line-height: 1.7;
+}
+
+.sobre-page h1,
+.sobre-page h2 {
+  color: #c51d16;
+  line-height: 1.2;
+}
+
+.sobre-page h1 { margin: 12px 0 24px; font-size: 40px; }
+.sobre-page h2 { margin: 8px 0 24px; font-size: 30px; }
+.sobre-page h3 { margin-bottom: 8px; }
+.sobre-page p { font-size: 18px; }
+
+/* Lembretes temporarios para revisar o conteudo. */
+.sobre-page .sobre-comentario {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border: 1px dashed #a87923;
+  border-left: 4px solid #a87923;
+  border-radius: 4px;
+  background-color: #fff4cc;
+  color: #624710;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.sobre-comentario strong { display: block; margin-bottom: 5px; }
+.sobre-page .sobre-label {
+  margin: 0;
+  color: #a80000;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sobre-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.sobre-brand { text-align: center; }
+.sobre-brand img { border-radius: 50%; }
+.sobre-brand strong { display: block; color: #c51d16; font-size: 30px; }
+.sobre-section { padding: 40px 0; border-top: 1px solid #e7ddd0; }
+.sobre-historia p { max-width: 850px; }
+.sobre-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+.sobre-card {
+  padding: 24px;
+  background-color: white;
+  border: 1px solid #e7ddd0;
+  border-top: 4px solid #e1251b;
+  border-radius: 8px;
+}
+
+.sobre-card img { display: block; }
+.sobre-card a { font-weight: bold; }
+.sobre-proposito { padding: 35px; background-color: white; }
+
+/* Slider automatico de missao, visao e valores. */
+.proposito-slider { margin-top: 30px; overflow: hidden; border-radius: 16px; }
+.proposito-track { display: grid; gap: 20px; }
+.proposito-slider.is-ready .proposito-track {
+  display: flex;
+  gap: 0;
+  transition: transform .65s ease-in-out;
+}
+.proposito-card {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  background-color: #fff3e2;
+  border-top: 5px solid #c51d16;
+}
+.proposito-foto {
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+.proposito-texto { grid-column: 1; grid-row: 1; min-width: 0; padding: 36px; }
+.proposito-card:nth-child(2) { background-color: #fff7d7; border-color: #c39600; }
+.proposito-card:nth-child(3) { background-color: #edf7ee; border-color: #26834a; }
+.proposito-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: #a80000;
+}
+.proposito-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.proposito-card h3 { margin: 0 0 16px; font-size: 30px; }
+.proposito-card p { max-width: 700px; }
+.proposito-card .sobre-list { font-size: 16px; }
+.proposito-controles:not([hidden]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 8px;
+  background-color: #fff8e8;
+}
+.proposito-controles button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid #c51d16;
+  border-radius: 24px;
+  background-color: white;
+  color: #a80000;
+  font: inherit;
+  cursor: pointer;
+}
+.proposito-controles button:hover { background-color: #fbe0dc; }
+.proposito-controles button:focus-visible { outline: 3px solid #a80000; outline-offset: 3px; }
+.proposito-indicadores { display: flex; }
+.proposito-indicadores button { border: 0; background: transparent; min-width: 32px; }
+.proposito-indicadores button::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #c6b5aa;
+}
+.proposito-indicadores button[aria-current="true"]::after { background-color: #c51d16; }
+.proposito-pausa { padding: 0 14px; }
+@media (prefers-reduced-motion: reduce) {
+  .proposito-slider.is-ready .proposito-track { transition: none; }
+}
+
+.sobre-list { padding-left: 22px; font-size: 18px; }
+.sobre-list li { margin-bottom: 14px; }
+.sobre-convite { text-align: center; }
+.sobre-convite address { margin-bottom: 24px; font-style: normal; }
+.sobre-page .sobre-nota { font-size: 14px; }
+
+.sobre-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #c51d16;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sobre-button:hover,
+.sobre-button:focus-visible { background-color: #a80000; }
+
+/* Sobre nos no celular. */
+@media (max-width: 800px) {
+  .sobre-page { padding: 35px 0; }
+  .sobre-page h1 { font-size: 30px; }
+  .sobre-page h2 { font-size: 26px; }
+  .sobre-intro, .sobre-cards { grid-template-columns: 1fr; }
+  .sobre-intro { gap: 25px; }
+  .sobre-brand img { width: 180px; height: 180px; }
+  .sobre-proposito { padding: 24px; }
+  .proposito-card { grid-template-columns: 1fr; grid-template-rows: 220px 1fr; }
+  .proposito-foto { grid-column: 1; grid-row: 1; height: 220px; min-height: 0; }
+  .proposito-texto { grid-column: 1; grid-row: 2; padding: 24px 18px; }
+  .proposito-controles:not([hidden]) { gap: 6px; flex-wrap: wrap; }
+}
