@@ -259,6 +259,24 @@ section.slider{
     border-top: 5px solid #e1251b;
 }
 
+/* Icones SVG salvos na pasta assets/icons. */
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background-color: #fff8e8;
+}
+
+.card-icon img {
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+
 .home-card h3 {
     margin-top: 0;
 }
