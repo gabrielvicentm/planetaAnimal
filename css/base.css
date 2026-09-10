@@ -1,0 +1,165 @@
+/* Estilos compartilhados por todas as paginas. */
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff8e8;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+a { color: #a80000; }
+img { max-width: 100%; }
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: 10px; top: 10px; background: white; padding: 8px; }
+
+/* cabecalho */
+.site-header {
+  background-color: #e1251b;
+  border-bottom: 5px solid #ffcc00;
+}
+
+.header-container {
+  max-width: 1100px;
+  min-height: 90px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand img {
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.main-nav { margin-left: auto; }
+
+.nav-list {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  padding: 8px 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+.whatsapp-button {
+  padding: 10px;
+  background-color: #20a354;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 7px;
+  background-color: #ffcc00;
+  border: 1px solid black;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px;
+  background-color: black;
+}
+
+/* conteudo das paginas */
+.page-content {
+  flex: 1;
+  width: 90%;
+  max-width: 1000px;
+  min-height: 400px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-content h1 {
+  color: #c51d16;
+  font-size: 40px;
+}
+
+.page-content p { font-size: 18px; }
+
+/* rodape */
+.site-footer {
+  padding-top: 25px;
+  background-color: #333;
+  border-top: 5px solid #e1251b;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 20px 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.footer-brand { display: flex; gap: 12px; }
+.footer-brand img { width: 75px; height: 75px; border-radius: 50%; }
+.site-footer h2 { margin-top: 0; color: #ffcc00; font-size: 18px; }
+.footer-section ul { padding-left: 20px; }
+.site-footer a { color: white; }
+.footer-section address { font-style: normal; }
+.footer-map-link { display: inline-block; margin-top: 10px; }
+
+.footer-bottom {
+  padding: 12px;
+  background-color: #222;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-bottom p { margin: 4px; }
+
+/* Menu e rodape no celular. */
+@media (max-width: 800px) {
+  .header-container { flex-wrap: wrap; }
+  .menu-toggle { display: block; margin-left: auto; }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    margin: 0;
+    order: 4;
+  }
+
+  .main-nav.is-open { display: block; }
+  .nav-list { display: block; }
+  .nav-list a { border-bottom: 1px solid #ffcc00; }
+
+  .header-whatsapp {
+    order: 5;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-container { grid-template-columns: 1fr; }
+}
