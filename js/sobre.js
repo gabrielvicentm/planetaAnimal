@@ -16,6 +16,7 @@ if (propositoSlider) {
     faixa.style.transform = 'translateX(-' + atual * 100 + '%)';
     slides.forEach(function (slide, indice) {
       slide.setAttribute('aria-hidden', String(indice !== atual));
+      slide.inert = indice !== atual;
     });
     indicadores.forEach(function (botao, indice) {
       if (indice === atual) botao.setAttribute('aria-current', 'true');

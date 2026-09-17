@@ -19,23 +19,6 @@
 .sobre-page h3 { margin-bottom: 8px; }
 .sobre-page p { font-size: 18px; }
 
-/* Lembretes temporarios para revisar o conteudo. */
-.sobre-page .sobre-comentario {
-  margin: 18px 0;
-  padding: 14px 18px;
-  border: 1px dashed #a87923;
-  border-left: 4px solid #a87923;
-  border-radius: 4px;
-  background-color: #fff4cc;
-  color: #624710;
-  font-family: Consolas, "Courier New", monospace;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: left;
-  overflow-wrap: anywhere;
-}
-
-.sobre-comentario strong { display: block; margin-bottom: 5px; }
 .sobre-page .sobre-label {
   margin: 0;
   color: #a80000;
@@ -70,8 +53,9 @@
 .sobre-card img { display: block; }
 .sobre-card a { font-weight: bold; }
 .sobre-proposito { padding: 35px; background-color: white; }
+.sobre-lead { max-width: 800px; margin-top: -8px; color: #5c4d45; }
 
-/* Slider automatico de missao, visao e valores. */
+/* Slider de diferenciais da Planeta Animal. */
 .proposito-slider { margin-top: 30px; overflow: hidden; border-radius: 16px; }
 .proposito-track { display: grid; gap: 20px; }
 .proposito-slider.is-ready .proposito-track {
