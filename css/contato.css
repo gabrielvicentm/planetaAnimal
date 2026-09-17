@@ -4,6 +4,7 @@
   width: min(92%, 1120px);
   margin: auto;
   padding: 64px 0 80px;
+  font-family: Arial, sans-serif;
 }
 
 .contact-intro {
@@ -16,7 +17,7 @@
   max-width: 700px;
   margin: 10px 0 18px;
   color: #9c1b17;
-  font-family: Georgia, serif;
+  font-family: Arial, sans-serif;
   font-size: clamp(2.5rem, 5vw, 4.4rem);
   line-height: 1.05;
 }
@@ -25,7 +26,7 @@
 .panel-kicker {
   margin: 0;
   color: #b1221b;
-  font-size: 12px;
+  font-size: 23px;
   letter-spacing: 1.8px;
   font-weight: bold;
   text-transform: uppercase;
@@ -34,7 +35,7 @@
 .contact-lead { max-width: 620px; margin: 0; font-size: 18px; line-height: 1.7; }
 .contact-section, .store-section, .location-section, .hours-section { margin-bottom: 80px; }
 .section-heading { margin-bottom: 24px; }
-.section-heading h2, .store-copy h2 { margin: 8px 0 0; color: #292929; font-family: Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.7rem); }
+.section-heading h2, .store-copy h2 { margin: 8px 0 0; color: #292929; font-family: Arial, sans-serif; font-size: clamp(1.8rem, 3vw, 2.7rem); }
 
 .contact-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 
@@ -65,12 +66,15 @@
 .contact-action-whatsapp { border-top-color: #168c4c; }
 .contact-action-instagram { border-top-color: #c13584; }
 .action-icon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; background: #fae6e1; color: #b1221b; font-size: 20px; font-weight: bold; }
+.action-icon img {display: block;width: 24px;height: 24px;object-fit: contain;}
 .contact-action-whatsapp .action-icon { background: #e0f4e8; color: #168c4c; font-size: 12px; }
 .contact-action-instagram .action-icon { background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7); color: white; }
 .contact-action strong, .contact-action small { display: block; }
 .contact-action strong { margin-bottom: 6px; font-size: 15px; }
 .contact-action small { color: #6f675f; font-size: 13px; }
 .action-arrow { color: #b1221b; font-size: 21px; }
+.action-arroww { color: #168c4c; font-size: 21px; }
+.action-arrowi { color: #c13584; font-size: 21px; }
 
 .store-section { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(300px, .7fr); gap: 56px; align-items: center; }
 .store-photo { position: relative; min-height: 440px; margin: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 16px 30px rgba(77, 47, 29, .14); }
