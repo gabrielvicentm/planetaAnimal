@@ -154,6 +154,24 @@ section.slider{
     border-top: 5px solid #e1251b;
 }
 
+/* Fotos usadas nos catálogos de serviços e produtos. */
+.card-img {
+    display: block;
+    width: calc(100% + 44px);
+    height: 220px;
+    margin: -22px -22px 18px;
+    object-fit: cover;
+}
+
+.product-catalog .home-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-catalog .home-button {
+    margin-top: auto;
+}
+
 /* Icones SVG salvos na pasta assets/icons. */
 .card-icon {
     display: flex;
