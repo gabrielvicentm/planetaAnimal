@@ -40,7 +40,9 @@ const primeiroRadio = document.getElementById('radio1');
 let slideAtual = 1;
 
 if (primeiroRadio) {
-  document.querySelectorAll('input[name="btn-radio"]').forEach((radio, index) => {
+  const radiosSlider = document.querySelectorAll('input[name="btn-radio"]');
+
+  radiosSlider.forEach((radio, index) => {
     radio.addEventListener('change', () => {
       slideAtual = index + 1;
     });
@@ -49,7 +51,7 @@ if (primeiroRadio) {
   setInterval(() => {
     slideAtual++;
 
-    if (slideAtual > 4) {
+    if (slideAtual > radiosSlider.length) {
       slideAtual = 1;
     }
 

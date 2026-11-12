@@ -14,7 +14,7 @@ section.slider{
 }
 
 .slider-content{
-    width: 400%;
+    width: 300%;
     height: 100%;
     display: flex;
 }
@@ -25,7 +25,7 @@ section.slider{
 
 .slide-box{
     position: relative;
-    width: 25%;
+    width: 33.333333%;
     height: 100%;
     transition: 1s;
 }
@@ -37,6 +37,10 @@ section.slider{
     object-fit: cover;
 }
 
+.veterinario-slide img{
+    object-position: center top;
+}
+
 .nav-manual, .nav-auto{
     position: absolute;
     bottom: 25px;
@@ -46,7 +50,7 @@ section.slider{
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid #ff0054;
+    border: 1px solid #f5a623;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -58,11 +62,11 @@ section.slider{
 }
 
 .nav-manual .manual-btn:hover{
-    background-color: #ff0054;
+    background-color: #f5a623;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
-    background-color: #ff0054;
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #f5a623;
 }
 
 #radio1:checked ~ .primeiro{
@@ -70,16 +74,13 @@ section.slider{
 }
 
 #radio2:checked ~ .primeiro{
-    margin-left: -25%;
+    margin-left: -33.333333%;
 }
 
 #radio3:checked ~ .primeiro{
-    margin-left: -50%;
+    margin-left: -66.666667%;
 }
 
-#radio4:checked ~ .primeiro{
-    margin-left: -75%;
-}
 
 .slide-texto {
     position: absolute;
